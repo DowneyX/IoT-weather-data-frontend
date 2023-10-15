@@ -1,0 +1,63 @@
+<div class="mx-auto container px-20">
+
+  <div class="bg-white max-h-[500px] rounded-lg my-4 p-6">
+    <div>
+      <ngx-charts-line-chart
+        [animations]="false"
+        [legend]="false"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        xAxisLabel="Time"
+        yAxisLabel="temperature"
+        [timeline]="true"
+        [results]="dayTemperatureData"
+        [xAxisTickFormatting]="xAxisFormat"
+        [autoScale] = "true"
+        >
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+
+  <div class="bg-white max-h-[500px] rounded-lg my-4 p-6">
+    <div>
+      <ngx-charts-line-chart
+        [animations]="false"
+        [legend]="false"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        xAxisLabel="Time"
+        yAxisLabel="Humidity"
+        [timeline]="true"
+        [results]="dayHumidityData"
+        [xAxisTickFormatting]="xAxisFormat"
+        [autoScale] = "true"
+        >
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+
+  <div class="bg-white max-h-[500px] rounded-lg my-4 p-6">
+    <div>
+      <ngx-charts-line-chart
+        [animations]="false"
+        [legend]="false"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        xAxisLabel="Time"
+        yAxisLabel="Pressure"
+        [timeline]="true"
+        [results]="dayPressureData"
+        [xAxisTickFormatting]="xAxisFormat"
+        [autoScale] = "true"
+        >
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+
+</div>
